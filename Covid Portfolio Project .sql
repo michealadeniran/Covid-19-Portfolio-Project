@@ -161,6 +161,8 @@ Where dea.continent is not null
 
 Select *,(RollingpeopleVaccinated/Population)*100 From #PercentpopulationVaccinated
 
+---Creating View to store data for later Visualization----
+
 Drop view if exists PercentpopulationVaccinated
 Create View PercentpopulationVaccinated as
 SELECT dea.continent,dea.location,dea.date,dea.population,
